@@ -1,0 +1,13 @@
+#main {
+    background-color: rgba(99, 6, 6, 0.868);
+    color: bisque;
+    width: 50%;
+    text-align: center;
+    border-radius: 40px;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 1000;
+}

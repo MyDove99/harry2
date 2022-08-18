@@ -1,0 +1,805 @@
+html{
+    background-color:rgb(189, 189, 189);
+    background-image: url('/css/background.png');
+    background-size: 100% 100vh;
+    background-repeat: y-repeat;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body{
+    background-repeat: no-repeat;
+    padding-left: 220px;
+    padding-top: 96px;
+}
+.hr{
+    height: 5px;
+    background-color:black;
+}
+
+
+/* 배경 속성 */
+.bg{
+    position: static;
+    height: 110px;
+    background-color: rgb(53, 55, 71);
+}
+
+/* ---------------------------------------------------------------- */
+
+/* 상단바 */
+header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-image: url('/css/back02.png');
+    /* background-color: rgb(53, 55, 71); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* 상단바 배너이미지 */
+.Top-banner{
+    width: 210px;
+    height: auto;
+    padding-top: 25px;
+    padding-left: 25px;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+}
+
+/* 상단바 실시간 인기도 랭킹 Div*/
+#Real-Time-User-Rank{
+    margin-top: 2px;
+    position: absolute;
+    margin-left: 220px;
+    color: aquamarine;
+}
+
+/* 상단바 실시간 인기도 랭킹 이모티콘 */
+#Top-Emoge{
+    font-size: 10px;
+}
+
+/* 상단바 실시간 인기도 랭킹 문구 */
+#Top-Rank-Title{
+    text-align: center;
+    font-size: 12px;
+    text-shadow: 0px 0px 2px aquamarine,
+    0px 0px 4px aquamarine,
+    0px 0px 6px aquamarine;
+}
+
+/* 상단바 실시간 인기도 랭킹 글씨*/
+#Top-Rank01{
+    width: 140px;
+    height: 14px;
+    font-size: 12px;
+    background-color: rgba(24, 24, 24, 0.3);
+    color: rgb(255, 229, 80);
+    border: none;
+}
+#Top-Rank02{
+    width: 140px;
+    height: 14px;
+    font-size: 12px;
+    background-color: rgba(24, 24, 24, 0.3);
+    color: silver;
+    border: none;
+}
+#Top-Rank03{
+    width: 140px;
+    height: 14px;
+    font-size: 12px;
+    background-color: rgba(24, 24, 24, 0.3);
+    color: rgb(206, 142, 68);
+    border: none;
+}
+
+/* 상단바 table */
+.Top-Table{
+    margin-top: 14px;
+    width: auto;
+    height:auto;
+    transform: translate(40%);
+}
+
+/* 상단바 공지 tr */
+.Top-News{
+    height: auto;
+    color: gold;
+}
+
+/*상단바 HOGWARTS NEWS옆 이모티콘*/
+#Top-Emoge02{
+    margin-top: 1px;
+    font-size: 12px;
+}
+
+/* 상단바 HOGWARTS NEWS 문구*/
+#News-Title{
+    font-size: 14px;
+    text-shadow: 0px 0px 2px gold,
+    0px 0px 4px gold,
+    0px 0px 6px gold;
+}
+
+/* 상단바 공지내용 */
+#News{
+    position: absolute;
+    width:400px;
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+/* 상단바 검색창 tr */
+.Top-News02{
+    width: auto;
+    vertical-align: middle;
+}
+
+/* 상단바 검색창 */
+#Search-Box{
+    width: 464px;
+    height: 28px;
+    font-size: 12px;
+    border: 3px solid;
+    border-color: gold;
+    outline:none;
+    vertical-align: middle;
+}
+
+/* 상단바 검색버튼 */
+#Search-Button{
+    width: 77px;
+    height: 28px;
+    border: none;
+    color: white;
+    background-color: gold;
+    vertical-align: middle;
+}
+
+.Top-Login-User-Table{
+    position: absolute;
+    text-align: right;
+    margin-left: 1040px;
+    margin-top: 20px
+}
+
+.Top-Login-User-td01,.Top-Login-User-td02{
+    font-size: 14px;
+    color: tomato;
+    text-shadow: 0px 0px 2px tomato,
+    0px 0px 4px tomato,
+    0px 0px 6px tomato;
+}
+
+.Top-Login-User-number{
+    width: 100px;
+    text-align: right;
+    background-color: rgba(240, 248, 255, 0);
+    color: aliceblue;
+    text-shadow: 0px 0px 2px aliceblue,
+    0px 0px 4px aliceblue,
+    0px 0px 6px aliceblue;
+    outline: none;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* 사이드바 배경*/
+.Side-bar{
+    z-index: 2;
+    position: fixed;
+    top: 97px;
+    left: 0;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    background-image: url('/css/back01.png');
+    /* background-color: rgb(53, 55, 71); */
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    filter: drop-shadow(5px 10px 15px black);
+    border-right: 1px solid rgba(0, 0, 0, 0.336);
+    overflow-y: scroll;
+}
+.Side-bar::-webkit-scrollbar{
+    width: 5px;
+}
+.Side-bar::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    height: 35px;
+    border-radius: 15px;
+}
+.Side-bar::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0);
+    border-bottom-right-radius: 10px;
+}
+
+/* 사이드바 로그인 table */
+.Side-Log{
+
+    text-align: center;
+    width: 97%;
+
+}
+
+/* 사이드바 아이디 비밀번호 입력칸*/
+#Side-Id,#Side-Pw{
+    outline:none;
+    width: 100%;
+    height: 40px;
+}
+
+/* 사이드바 로그인버튼 */
+#Side-Login{
+    width: 100%;
+    height: 32px;
+    background-color: white;
+}
+
+/* 사이드바 아이디/비번 찾기 */
+#Side-IP{
+    width: 100%;
+    height: 32px;
+    background-color: rgb(120, 174, 221);
+}
+
+/* 사이드바 회원가입 */
+#Side-Signin{
+    width: 100%;
+    height: 32px;
+    background-color: gold;
+}
+
+/* 사이드바 메뉴 table */
+.Side-Menu-Table{
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+/* 사이드바 그레이트홀 버튼 */
+#Side-GreatHall-Button{
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-GreatHall-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 그레이트홀 드롭다운 */
+#Side-GreatHall-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 기숙사 버튼 */
+#Side-Domitory-Button{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-Domitory-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 기숙사 드롭다운 */
+#Side-Domitory-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 랭킹확인 버튼 */
+#Side-Rank-Button{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-Rank-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 랭킹확인 드롭다운 */
+#Side-Rank-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 마법수업 버튼 */
+#Side-Class-Button{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-Class-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 마법수업 드롭다운 */
+#Side-Class-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 포인트 버튼 */
+#Side-Game-Button{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-Game-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 포인트 드롭다운 */
+#Side-Game-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 스토어 버튼 */
+#Side-Store-Button{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-Store-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 스토어 드롭다운 */
+#Side-Store-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 창작마당 버튼 */
+#Side-Contents-Button{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-Contents-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 창작마당 드롭다운 */
+#Side-Contents-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 커뮤니티 버튼 */
+#Side-Comunity-Button{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-Comunity-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 커뮤니티 드롭다운 */
+#Side-Comunity-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 문의 버튼 */
+#Side-QnA-Button{
+    margin-top: -10px;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background-image: url('/css/btn02.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 2px rgb(0, 0, 0),
+    3px 3px 2px rgb(0, 0, 0),
+    4px 4px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#Side-QnA-Button:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-image: url('/css/btn01.jpg');
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 4px black);
+    text-shadow: 0px 0px 1px rgb(255, 255, 255),
+    0px 0px 4px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* 사이드바 문의 드롭다운 */
+#Side-QnA-Dropdown{
+    text-align: center;
+    background-image: url('/css/dropdown.png');
+    border: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* 사이드바 드롭다운 글씨 */
+#Side-Dropdown{
+    font-size: 17px;
+    color: white;
+    text-decoration-line: none;
+}
+
+/* 사이드바 드롭다운 글씨 마우스오버 */
+#Side-Dropdown:hover{
+    font-size: 17px;
+    color: rgb(252, 223, 93);
+    text-decoration-line: none;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* 메인화면 인사말 Div */
+.Main-Top-News{
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+    border: 2px solid rgb(209, 209, 209);
+    filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.781));
+}
+
+/* 메인화면 인사말 문구 */
+#Main-News{
+    margin-top: 3px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 3px;
+    width: 59%;
+    color: rgb(198, 199, 198);
+    text-shadow: 0px 0px 1px rgb(121, 211, 121),
+    0px 0px 3px rgb(121, 211, 121),
+    0px 0px 6px rgb(255, 255, 255);
+    background-color: rgb(19, 19, 19);
+    font-family: 'ROKAFSansBold';
+    border-right: 2px solid rgb(209, 209, 209)  ;
+}
+
+/* 메인화면 알림창 문구 */
+#Main-News02{
+    margin-top: 3px;
+    margin-left: 2px;
+    margin-right: 0px;
+    margin-bottom: 3px;
+    width: 39%;
+    color: rgb(204, 116, 44);
+    text-shadow: 0px 0px 1px rgb(243, 144, 52);
+    background-color: rgb(19, 19, 19);
+    font-family: 'ROKAFSansBold';
+}
+
+/* 메인화면 전체게시판 Div*/
+.Main-All-Board{
+    margin-top: 45px;
+    margin-left: 8px;
+    text-align: center;
+    vertical-align: middle;
+    filter: drop-shadow(0px 0px 4px black);
+
+}
+
+/* 메인화면 전체게시판 table */
+.Main-All-Boardtable{
+    width: 1030px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* 메인화면 전체게시판 상단 tr */
+.Main-All-BoardName{
+    width: 680px;
+    height: 30px;
+    font-size: 17px;
+    background-color: rgb(180, 180, 180);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'ONE-Mobile-Title';
+}
+
+/* 메인화면 전체게시판 하단 tr */
+.Main-All-BoardBottom{
+    height: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(180, 180, 180);
+}
+
+/* 메인화면 전체게시판 분류 tr */
+.Main-All-BoardTitle{
+    color: rgb(0, 0, 0);
+    background-color: rgb(100, 100, 100);
+}
+.Main-All-Board-Contents:hover{
+    transition: 0.2s;
+    color: gold;
+    text-shadow: 0px 0px 1px gold,
+    0px 0px 2px gold,
+    0px 0px 3px gold;
+    background-color: rgb(53, 53, 53);
+}
+
+/* 메인화면 전체게시판 분류 문구 */
+#MAB01_01{
+    width:12%;
+    border-right: 1px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+#MAB01_02{
+    width:45%;
+    border-right: 1px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+#MAB01_03{
+    width: 20%;
+    border-right: 1px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+#MAB01_04{
+    width: 15%;
+    border-right: 1px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+#MAB01_05{
+    width: 8%;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+
+/* 메인화면 전체게시판 문구 tr */
+.Main-All-Board-Contents{
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+
+
+/* 메인화면 전체게시판 문구 */
+.MAB02_01{
+    width:12%;
+    border-right: 1px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+.MAB02_02{
+    width:45%;
+    border-right: 1px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+.MAB02_03{
+    width: 20%;
+    border-right: 1px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+.MAB02_04{
+    width: 15%;
+    border-right: 1px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+.MAB02_05{
+    width: 8%;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+
+.paging{
+    position: absolute;
+    color: white;
+    margin-top: 760px;
+    margin-left: 8px;
+    height: 40px;
+    width: 1042px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    /* background-color: rgb(180, 180, 180); */
+    filter: drop-shadow(0px 0px 4px black);
+}
+/* ---------------------------------------------------------------- */
+.Writing-Div{
+    filter: drop-shadow(0px 0px 4px black);
+}
+
+#writing-text{
+    background-image:url("/css/domitory/title.png");
+    background-repeat: no-repeat;
+    background-size: 210px 45px;
+    margin-left:2px;
+    width: 210px;
+    height: 45px;
+    color: rgb(117, 216, 216);
+    text-shadow: 0px 0px 1px rgb(117, 216, 216),
+    0px 0px 2px rgb(117, 216, 216),
+    0px 0px 4px rgb(117, 216, 216);
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: 0px solid;
+    text-align: center;
+}
+/* 사이드바 아이디/비번 찾기 */
+.Side-Login-On{
+    margin-left: 8px;
+    background-color: rgba(180, 180, 180, 0.233);
+    background-image: url('/css/border.png');
+    background-size: 200px 285px;
+    background-repeat: no-repeat;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 10px black);
+}
+#nick{
+    color: gold;
+    text-shadow: 0px 0px 1px gold,
+                 0px 0px 2px gold;
+}
+.logout{
+    color: rgb(255, 123, 0);
+    text-decoration: none;
+}
+#sipal{
+    font-size: 15px;
+    text-align: center;
+}

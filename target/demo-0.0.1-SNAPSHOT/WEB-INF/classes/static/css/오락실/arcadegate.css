@@ -1,0 +1,79 @@
+html{
+    background-image: url('entrance.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    text-align: center;
+}
+
+.background{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+h1{
+    text-align: center;
+    margin-top: 5%;
+    color: antiquewhite;
+    text-shadow: 0px 0px 1px black,
+    0px 0px 2px black,
+    0px 0px 4px black;
+}
+
+p{
+    font-family: 'PFStardust';
+    margin-top: 5%;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 1px white,
+    0px 0px 2px white,
+    0px 0px 4px black;
+}
+
+#red{
+    color: rgb(115, 255, 0);
+    text-shadow: 0px 0px 1px rgb(137, 255, 3),
+    0px 0px 2px rgb(81, 255, 0),
+    0px 0px 4px rgb(51, 255, 0);
+}
+
+#Go{
+    font-size: 20px;
+    font-family: 'DungGeunMo';
+    color: yellow;
+    text-shadow: 0px 0px 2px yellow,
+    0px 0px 4px yellow;
+}
+
+.btn{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5%;
+    height: 60px;
+    width: 300px;
+    background-color: rgba(240, 248, 255, 0.534);
+}
+
+.btn:hover{
+    transition: 0.7s;
+    background-color: gold;
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 30px gold);
+}
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

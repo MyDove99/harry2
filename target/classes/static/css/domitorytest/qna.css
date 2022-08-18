@@ -1,0 +1,46 @@
+#qna {
+    display: none;
+}
+
+.qBox {
+    background-color: rgba(99, 6, 6, 0.868);;
+    color: bisque;
+    text-align: center;
+    border-radius: 20px;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+    font-size: 25px;
+    width: 80%;
+}
+
+.answerList{
+    background-color: #ffc153;
+    border-radius: 20px;
+    display: block;
+    width: 80%;
+    font-size: 20px;
+
+}
+
+.answerList:hover, .answerList:focus {
+    background-color: #c39340;
+    color: #FFF9D7;
+}
+
+.status{
+    height: 20px;
+    width: 80%;
+    background-color: rgba(255, 249, 215, 0.868);
+    border-radius: 7px;
+}
+
+.statusBar{
+    height: 100%;
+    border-radius: 7px;
+    background-color: #ffc153;
+}
+
+.answerCss{
+    background-color: rgba(99, 6, 6, 0.868);;
+    width: 80%;
+    border-radius: 20px;
+}

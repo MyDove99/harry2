@@ -1,0 +1,31 @@
+#result{
+    display: none;
+    background-color: rgba(99, 6, 6, 0.868);;
+    color: bisque;
+    width: 50%;
+    text-align: center;
+    border-radius: 40px;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+}
+
+.resultname{
+    font-size: 22px;
+    font-weight: 1000;
+}
+
+.resultDesc {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.kakao {
+    color: black;
+    background-color: #ffc153;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.kakao:hover, .kakao:focus {
+    background-color: #a19207;
+    color: navy;
+}
